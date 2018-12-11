@@ -25,19 +25,15 @@
                         return false;
                         }
                         else{
-                        var a=document.forms["myForm"]["pwd"].value;
-                            if(a==""){
-                            alert("Enter Password");
-                            return false;
-                            }
-                            else if(a.length<8){
-                            alert("invalid Password.Password should of minimum 8 characters");
-                            return false;
-                            }
-                            else{
-                                alert("Thank you for Registering");
+
+                            var password=document.forms["myForm"]["pwd"].value;
+                            var msg="Thanks for creating an account";
+                            var checkpassword=validatepassword(password,msg);
+                            if(checkpassword==false){
+                                return false;
                             }
                         }
+                           
                     }   
                 }
     }
@@ -51,17 +47,24 @@ function validateForm1() {
                     return false;
                 }
                 else{
-                    var a=document.forms["myForm"]["pwd"].value;
-                    if(a==""){
+                    var password=document.forms["myForm"]["pwd"].value;
+                    var msg="You have Successfully signed in";
+                    var checkpassword=validatepassword(password,msg);
+                    if(checkpassword==false){
+                        return false;
+                    } 
+                 }
+        }
+        function validatepassword(password,msg ){
+            if(password==""){
                         alert("Enter Password");
                         return false;
                     }
-                    else if(a.length!=8){
-                        alert("invalid Password.Password should of minimum 8 characters");
+                    else if(password.length<8){
+                        alert("Invalid Password.Password should of minimum 8 characters");
                         return false;
                     }
                     else{
-                        alert("Successful");
-                    }          
-                    }
+                        alert(msg);
+                    } 
         }

@@ -145,6 +145,15 @@ body form{
     color: white;
 }
 
+@media screen and (min-width: 450px){
+	.input-group-lg>.form-control {
+    width: 340px;
+}
+	.button-fullwidth {
+		width: 340px;
+}
+
+}
 @media screen and (min-width: 992px) {
     .social{
         margin-top: 95px;
