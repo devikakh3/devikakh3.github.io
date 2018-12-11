@@ -18,35 +18,58 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+
+    <script>
+        function validateForm() {
+  var x = document.forms["myForm"]["email"].value;
+  var atpos = x.indexOf("@");
+  var dotpos = x.lastIndexOf(".");
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+    alert("Not a valid e-mail address");
+    return false;
+  }
+    else{
+        
+        
+        
+        
+    }
+}
+</script>
 </head>
 
 <body>
 
-    <symbol id="octocat" viewBox="0 0 250 243.83"><path d="M125 0a125 125 0 0 0-39.5 243.61c6.25 1.15 8.53-2.71 8.53-6 0-3-.11-10.83-.17-21.26-34.77 7.55-42.11-16.76-42.11-16.76-5.68-14.44-13.88-18.28-13.88-18.28-11.35-7.76.86-7.6.86-7.6 12.54.88 19.15 12.88 19.15 12.88C69 205.67 87.13 200.16 94.25 197c1.14-8.08 4.36-13.59 7.94-16.71-27.76-3.15-56.94-13.88-56.94-61.78a48.32 48.32 0 0 1 12.86-33.59c-1.29-3.16-5.57-15.87 1.23-33.08 0 0 10.5-3.36 34.37 12.81a118.48 118.48 0 0 1 62.59 0c23.86-16.18 34.34-12.81 34.34-12.81 6.82 17.21 2.53 29.92 1.24 33.08a48.24 48.24 0 0 1 12.85 33.54c0 48-29.23 58.59-57.07 61.68 4.49 3.86 8.49 11.49 8.49 23.15 0 16.71-.15 30.19-.15 34.29 0 3.34 2.25 7.23 8.6 6A125 125 0 0 0 125 0z" fill-rule="evenodd"/></symbol>
-    
-    
+<!--
+    <symbol id="octocat" viewBox="0 0 250 243.83">
+        <path d="M125 0a125 125 0 0 0-39.5 243.61c6.25 1.15 8.53-2.71 8.53-6 0-3-.11-10.83-.17-21.26-34.77 7.55-42.11-16.76-42.11-16.76-5.68-14.44-13.88-18.28-13.88-18.28-11.35-7.76.86-7.6.86-7.6 12.54.88 19.15 12.88 19.15 12.88C69 205.67 87.13 200.16 94.25 197c1.14-8.08 4.36-13.59 7.94-16.71-27.76-3.15-56.94-13.88-56.94-61.78a48.32 48.32 0 0 1 12.86-33.59c-1.29-3.16-5.57-15.87 1.23-33.08 0 0 10.5-3.36 34.37 12.81a118.48 118.48 0 0 1 62.59 0c23.86-16.18 34.34-12.81 34.34-12.81 6.82 17.21 2.53 29.92 1.24 33.08a48.24 48.24 0 0 1 12.85 33.54c0 48-29.23 58.59-57.07 61.68 4.49 3.86 8.49 11.49 8.49 23.15 0 16.71-.15 30.19-.15 34.29 0 3.34 2.25 7.23 8.6 6A125 125 0 0 0 125 0z" fill-rule="evenodd" />
+    </symbol>
+-->
+
+
     <header>
         <img src="Skills360__Logo.png">
-        <button type="button" class="btn btn-info button_clr sign_in"><a href="sign.html">SignIn</a></button>
+        <button type="button" class="btn btn-info button_clr sign_in"><a href="sign.html">SignUp</a></button>
     </header>
-    <div class="col-md-12">
+    
         <div class="img_class">
-            
             <div class="container back_g" width="50px;">
-
-
-                <div class="col-md-6">
+                <div class="col-sm-12 col-md-6">
                     <div class="inner_back_g">
-                        <h1 class="little-big-header" style="color: blue;">Log in!</h1>
+                        <h1 class="little-big-header" style="color:#9bd03d;">Log in!</h1>
                         <div class="space"></div>
-                        <form>
+                        <form name="myForm" onsubmit="return validateForm();">
 
                             <div class="form-group">
                                 <div class="input-group-lg">
                                     <div class="input-group-prepend">
                                         <label for="usr" style="font-size: 21px;">Username or Email</label><span style="color: red">*</span>
                                     </div>
-                                    <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                    <input type="text" name="email" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -57,12 +80,12 @@
                                     <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
                                 </div>
                             </div>
-                            <button type="button" class="btn btn-info button_clr">Login</button>
+                            <button type="sumbit" value="Submit" class="btn btn-info button_clr">Login</button>
                             <a href="#" class="forgot-password-link">
                                 <span style="color:blue">Forgot Password?</span>
                             </a>
                             <div class="space"></div>
-<!--
+                            <!--
                             <div class="signup-callout">
                                 <span style="color: white;">Need an account?</span> <a href="" style="color: blue;">Sign up now!</a>
                             </div>
@@ -75,53 +98,89 @@
 
 
 
-                <div class="col-md-1">
-
-                </div>
 
 
 
-                <div class="col-md-5 social">
+
+                <div class="col-sm-12 col-md-6 social">
                     <div class="inner_back_g">
-                    <div class="login-social-buttons">
+                        <div class="login-social-buttons">
 
 
 
-                        <a id="login-with-twitter" href="/auth/twitter" data-network="Twitter" class="button social-account-button twitter-button button-fullwidth">
-                         
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                            <span>Log In with Twitter</span>
-                           
-                        </a>
+                            <a id="login-with-twitter" href="/auth/twitter" data-network="Twitter" class="button social-account-button twitter-button button-fullwidth">
 
-                        <a id="login-with-github" href="/auth/github" data-network="Github" class="button github-button social-account-button button-fullwidth">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                            <span>Log In with GitHub</span>
-                        </a>
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                <span>Log In with Twitter</span>
 
-                        <a id="login-with-facebook" href="/auth/facebook" data-network="Facebook" class="button social-account-button facebook-button button-fullwidth">
-                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                            <span>Log In with Facebook</span>
-                        </a>
+                            </a>
 
+                            <a id="login-with-github" href="/auth/github" data-network="Github" class="button github-button social-account-button button-fullwidth">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                                <span>Log In with GitHub</span>
+                            </a>
+
+                            <a id="login-with-facebook" href="/auth/facebook" data-network="Facebook" class="button social-account-button facebook-button button-fullwidth">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <span>Log In with Facebook</span>
+                            </a>
+
+                        </div>
                     </div>
                 </div>
-                </div>
+<!--
                 <div class="container col-md-12">
                     <div class="inner_back_g">
-                            <div class="signup-callout">
-                                <span style="color: white;font-weight: 300">Need an account?</span> <a href="" style="color: blue;">Sign up now!</a>
-                            </div>
+                        <div class="signup-callout">
+                            <span style="color: white;font-weight: 300">Need an account?</span> <a href="" style="color: blue;">Sign up now!</a>
+                        </div>
                     </div>
                 </div>
+-->
             </div>
-            
-            
+
+
         </div>
-       
-    </div>
-                            
+
+    
+
 
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+<!--
+
+ function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            else if{
+                var y = document.forms["myForm"]["email"].value;
+                var atpos = y.indexOf("@");
+                var dotpos = y.lastIndexOf(".");
+                if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length) {
+                alert("Not a valid e-mail address");
+                return false;
+            } 
+//            else if (contact.length!= 10) {
+//                alert("contact number invalid");
+//                return false;
+//            } 
+//            else(pwd.length!=10) {
+//                alert("contact password");
+//                return false;
+//            }
+ }   
+-->

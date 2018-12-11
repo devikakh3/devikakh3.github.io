@@ -22,7 +22,7 @@
      border-bottom-left-radius: 26;
  }
 .input-group-lg>.form-control{
-    width: 280px;
+    width: 100%;
 }
 
 
@@ -44,16 +44,11 @@
  .little-big-header {
      font-size: 5.5rem;
      margin: 0;
-     color: white
+     color: #9bd03d;
  }
 
- .back_g {
-
-     height: 100vh;
- }
-
- .img_class {
-     background-image: url(bg_img.jpg);
+  .img_class {
+     background-image: url(download.webp);
      background-repeat: repeat;
      min-height: 100%;
      min-width: 100%;
@@ -62,7 +57,6 @@
  .inner_back_g {
      padding: 5px;
      margin: auto;
-     width: 300px;
      margin-top: 50px;
  }
 
@@ -185,7 +179,6 @@ body form{
 
 .button-fullwidth {
     display: block;
-    width: 280px;
     height: 56px;
     text-align: center;
     margin: 10px 0;
@@ -226,10 +219,24 @@ body form{
 
 @media screen and (min-width: 992px) {
     .social{
-        margin-top: 103px;
+        margin-top: 95px;
+    }
+    .signup-callout {
+    
+    font-size: 23px;
+    height: 47px;
+    width: 387px;
+    padding-left: 39px;
+    padding-top: 8px;
+}
+    img{
+        height:auto;
+        width: auto;
     }
 }
-
+.verticalLine {
+  border-left: thick solid #ff0000;
+}
 
 
 
