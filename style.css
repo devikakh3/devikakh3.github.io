@@ -1,5 +1,5 @@
+ /*Created by Devika K.H*/
  header {
-     /*                background-color: #09849c;*/
      height: 9vh;
      display: flex;
      align-items: center;
@@ -7,17 +7,11 @@
      padding: 0px 10px;
  }
 
-/*
- .usr {
-     font-size: 50px;
- }
-*/
 .btn{
     font-size: 18px;
 }
 
  .input-group .form-control:last-child {
-
      border-top-left-radius: 26;
      border-bottom-left-radius: 26;
  }
@@ -25,12 +19,9 @@
     width: 100%;
 }
 
-
  label {
      font-weight: 700;
  }
-
-
 
  .button_clr {
      background: #60b5f0;
@@ -67,7 +58,6 @@
      height: 61px;
  }
 
-
  .h2 {
      font-family: "Telefon", Sans-Serif;
      font-size: 1.8rem;
@@ -78,15 +68,12 @@
 
  .sign_in {
      background-color: #60b5f0;
-     
-     
  }
 
  body .col-md-12 {
      padding-right: 0px;
      padding-left: 0px;
  }
-
 
  .signup-callout {
      background-color: #32333ba6;
@@ -104,39 +91,16 @@ body form{
         font-size: 21px;
 }
 
-
-
-
-
-
-/*fb */
 .social-account-button {
-/*    padding-left: 60px;*/
     display: flex;
     margin: auto;
     text-align: center;
 }
-/*
-.social-account-button svg {
-    width: 26px;
-    height: 26px;
-    fill: #fff;
-    position: absolute;
-    left: 14px;
-    top: 6px
-}
-*/
 
 .social-account-button.social-account-button-warning:hover:not([disabled]),.social-account-button.social-account-button-warning:focus:not([disabled]) {
     background: #a00808;
     color: white !important
 }
-
-/*
-.social-account-button.social-account-button-warning:hover:not([disabled]) svg,.social-account-button.social-account-button-warning:focus:not([disabled]) svg {
-    fill: white
-}
-*/
 
 .social-account-button.smaller {
     white-space: normal;
@@ -145,16 +109,6 @@ body form{
     background-size: 30px;
     background-position: 4px 12px
 }
-
-/*
-.social-account-button.smaller svg {
-    width: 20px;
-    height: 20px;
-    left: 8px;
-    top: 50%;
-    margin-top: -10px
-}
-*/
 
 .social-account-button.smaller:hover:not([disabled]),.social-account-button.smaller:focus:not([disabled]) {
     background-size: 30px;
@@ -166,16 +120,9 @@ body form{
 }
 
 .twitter-button:hover:not([disabled]),.twitter-button:focus:not([disabled]) {
-    /*background: #e6e2e4;*/
     color: black !important;
     text-shadow: none
 }
-/*
-.twitter-button:hover:not([disabled]) svg,.twitter-button:focus:not([disabled]) svg {
-    fill: #60b5f0
-}
-*/
-
 
 .button-fullwidth {
     display: block;
@@ -187,25 +134,7 @@ body form{
     border-radius: 15px;
     padding: 11px
 }
-/*
-.social-account-button svg {
-    width: 26px;
-    height: 26px;
-    fill: #fff;
-    position: absolute;
-    left: 14px;
-    top: 6px;
-}
-*/
-/*
-.button>svg {
-    
-    display: inline-block;
-    pointer-events: none;
-    vertical-align: bottom;
-    
-}
-*/
+
 .github-button {
     background: #7B7E8C;
     color: white;
@@ -216,19 +145,17 @@ body form{
     color: white;
 }
 
-
 @media screen and (min-width: 992px) {
     .social{
         margin-top: 95px;
     }
     .signup-callout {
-    
-    font-size: 23px;
-    height: 47px;
-    width: 387px;
-    padding-left: 39px;
-    padding-top: 8px;
-}
+    	font-size: 23px;
+    	height: 47px;
+    	width: 387px;
+    	padding-left: 39px;
+    	padding-top: 8px;
+	}
     img{
         height:auto;
         width: auto;
@@ -237,31 +164,3 @@ body form{
 .verticalLine {
   border-left: thick solid #ff0000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-/* end fb*/
-
-
-/*
- @media (max-width: 550px) {
-     .little-big-header {
-         font-size: 2.8rem;
-     }
-
-     .inner_back_g img {
-         border: 0;
-         height: 100px;
-     }
- }*/

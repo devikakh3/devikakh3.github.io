@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <title>SignIn skills360</title>
 
@@ -12,60 +11,20 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" type="text/css" href="style.css">
-
-
-
-    <script>
-        function validateForm() {
-            var x = document.forms["myForm"]["fname"].value;
-            if (x == "") {
-                alert("Name must be filled out");
-                return false;
-            }
-            else{
-                var y = document.forms["myForm"]["email"].value;
-                var atpos = y.indexOf("@");
-                var dotpos = y.lastIndexOf(".");
-                if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length) {
-                alert("Not a valid e-mail address");
-                return false;
-            }
-            }
-            // else (contact.length!= 10) {
-            //     alert("contact Invalid");
-            //     return false;
-            // } 
-  
-    
-    
-    
-}
-</script>
 
 </head>
 
 <body>
-
-
     <header>
+        <!-- Created by Devika K H -->
         <img src="Skills360__Logo.png">
         <button type="button" class="btn btn-info button_clr sign_in"><a href="index.html">SignIn</a></button>
     </header>
-    <!--
-         <header>
-        <img src="Skills360__Logo.png">
-        <button type="button" class="btn btn-info button_clr sign_in justify-content-center align-items-center" style="align-items:center"><a href="sign.html">SignIn</a></button>
-    </header>
--->
     <div class="col-md-12">
         <div class="img_class">
             <div class="container back_g" width="50px;">
                 <div class="inner_back_g">
-<!--                    <img src="Skills360__Logo.png">-->
                     <h1 class="little-big-header">Welcome</h1>
                     <div class="space"></div>
                     <div class="container">
@@ -113,8 +72,15 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 
