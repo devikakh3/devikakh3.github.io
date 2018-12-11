@@ -166,7 +166,7 @@ body form{
 }
 
 .twitter-button:hover:not([disabled]),.twitter-button:focus:not([disabled]) {
-    background: #e6e2e4;
+    /*background: #e6e2e4;*/
     color: black !important;
     text-shadow: none
 }
