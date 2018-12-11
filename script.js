@@ -17,11 +17,11 @@
                     else {
                         var z= document.forms["myForm"]["contact"].value;
                         if(z==""){
-                        alert("Enter number");
+                        alert("Enter Phone number");
                         return false;
                         }
                         else if(z.length!=10){
-                        alert("invalid number");
+                        alert("invalid Phone number");
                         return false;
                         }
                         else{
@@ -30,12 +30,12 @@
                             alert("Enter Password");
                             return false;
                             }
-                            else if(a.length!=8){
+                            else if(a.length<8){
                             alert("invalid Password.Password should of minimum 8 characters");
                             return false;
                             }
                             else{
-                                alert("Successful");
+                                alert("Thank you for Registering");
                             }
                         }
                     }   
